@@ -87,7 +87,7 @@ Se implementaron las pruebas indicadas en la clase FizzBuzzTest resultando en:
 
 Sin embargo recordemos que debemos seguir el patrón Triple A por lo que realizando esto resulta en: 
 
-    ```java
+```java
     class FizzBuzzTest {
 
         @Test
@@ -162,7 +162,7 @@ La implementación resultando (sin refactor) resultó en:
 
 Al momento de refactorizar, se puede ver la logica que ejecutan los condicionales siempre se valida, por lo que podriamos crear unas funciones que se encarguen de realizar esto quedando así:
 
-    ```java
+```java
         public class FizzBuzz{
             public static String fizzbuzz(int n) {
                 StringBuilder fizzBuzzResult = new StringBuilder();
@@ -183,7 +183,7 @@ Al momento de refactorizar, se puede ver la logica que ejecutan los condicionale
                 }
             }
         }
-    ```
+```
 ### Ejecución de pruebas
 
 Al momento de ejecutar `mvn test` se prueba que la implementanción se realizó correctamente.
