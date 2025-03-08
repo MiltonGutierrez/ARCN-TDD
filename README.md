@@ -35,10 +35,9 @@ Pasos para configurar el entorno de desarrollo:
 ## Desarrollo del laboratorio.
 
 Se creo el proyecto con el siguiente comando maven:
-
-    ```bash
-        mvn archetype:generate "-DgroupId=edu.escuelaing.arcn" "-DartifactId=tdd" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
-    ```
+   ```bash
+       mvn archetype:generate "-DgroupId=edu.escuelaing.arcn" "-DartifactId=tdd" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
+   ```
 
 Resultando en la siguiente estructura del proyecto:
 
@@ -61,8 +60,8 @@ Resultando en la siguiente estructura del proyecto:
 
 Se implementaron las pruebas indicadas en la clase FizzBuzzTest resultando en:
 
-    ```java
-        class FizzBuzzTest {
+   ```java
+      class FizzBuzzTest {
 
             @Test
             void testFizzBuzzReturnsNumber() {
@@ -84,13 +83,13 @@ Se implementaron las pruebas indicadas en la clase FizzBuzzTest resultando en:
                 assertEquals("FizzBuzz", FizzBuzz.fizzbuzz(15));
             }
         }
-    ```
+   ```
 
 ### Clase FizzBuzz.java
 
 La implementación resultando (sin refactor) resultó en:
 
-    ```java
+   ```java
         public class FizzBuzz{
             public static String fizzbuzz(int n) {
                 StringBuilder fizzBuzzResult = new StringBuilder();
@@ -104,7 +103,7 @@ La implementación resultando (sin refactor) resultó en:
                 
             }
         }
-    ```
+   ```
 
 ### Ejecución de pruebas
 
