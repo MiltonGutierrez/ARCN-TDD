@@ -7,21 +7,49 @@ class FizzBuzzTest {
 
     @Test
     void testFizzBuzzReturnsNumber() {
-        assertEquals("1", FizzBuzz.fizzbuzz(1));
+        // Arrange
+        int num = 1;
+        String expected = "1";
+        String result;
+        // Act
+        result = FizzBuzz.fizzbuzz(num);
+        // Assert
+        assertEquals(expected, result);
     }
 
     @Test
     void testFizzBuzzMultiplo3() {
-        assertEquals("Fizz", FizzBuzz.fizzbuzz(3));
+        // Arrange
+        int num = 3;
+        String expected = "Fizz";
+        String result;
+        // Act
+        result = FizzBuzz.fizzbuzz(num);
+        // Assert
+        assertEquals(expected, result);
     }
 
     @Test
     void testFizzBuzzMultiplo5() {
-        assertEquals("Buzz", FizzBuzz.fizzbuzz(5));
+        // Arrange
+        int num = 5;
+        String expected = "Buzz";
+        String result;
+        // Act
+        result = FizzBuzz.fizzbuzz(num);
+        // Assert
+        assertEquals(expected, result);
     }
 
     @Test
     void testFizzBuzzMultiplo3y5() {
-        assertEquals("FizzBuzz", FizzBuzz.fizzbuzz(15));
+        // Arrange
+        int num = 15;
+        String expected = "FizzBuzz";
+        String result;
+        // Act
+        result = FizzBuzz.fizzbuzz(num);
+        // Assert
+        assertEquals(expected, result);
     }
 }
