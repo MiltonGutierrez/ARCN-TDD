@@ -1,9 +1,5 @@
 package edu.escuelaing.arcn;
 
-/**
- * Hello world!
- *
- */
 public class FizzBuzz{
     public static String fizzbuzz(int n) {
         StringBuilder fizzBuzzResult = new StringBuilder();
